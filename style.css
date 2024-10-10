@@ -14,6 +14,7 @@ body {
   box-sizing: border-box;
 }
 
+
 nav {
   position: relative;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -25,22 +26,45 @@ nav {
   z-index: 2;
 }
 
+.nav2{
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color:#f5fbef;
+  padding: 5px;
+  border-radius: 10px;
+  z-index: 2;
+}
 
 ul {
   margin: 0;
   padding: 0;
 }
 
-nav ul {
+nav ul  {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
+.nav2 ul  {
+  list-style: none;
+  display: flex;
+  justify-content: top;
+}
+
+
 nav li {
   display: inline-block;
   height: 50px;
+}
+
+.nav2 li {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
 }
 
 nav a {
@@ -51,7 +75,13 @@ nav a {
   align-items: center;
   color: #748B75;
 }
-
+.nav2 a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #748B75;
+}
 nav a:hover {
   color: #5D6E5E;
   text-decoration: none;
@@ -62,7 +92,7 @@ nav li:first-child {
   margin-right: auto;
 }
 
-.sidebar {
+.sidebar , .sidebar2 {
   position: fixed;
   top: 0;
   right: 0;
@@ -78,29 +108,32 @@ nav li:first-child {
   justify-content: flex-start;
 }
 
-.sidebar li {
+.sidebar li , .sidebar2 li {
   width: 100%;
 }
 
-.sidebar a {
+.sidebar a , .sidebar2 a{
   color: #5D6E5E;
   width: 100%
 }
 
-.sidebar a:hover {
+.sidebar a:hover , .sidebar2 a:hover{
   color: #f5fbef;
   width: 100%
 }
 
-.menuButton{
+.menuButton {
   display: none;
+}
+
+.menuButton2{
+  list-style: none;
 }
 
 @media(max-width: 800px) {
   .hideOnMobile {
     display: none;
   }
-
   .menuButton {
     display: block;
   }
@@ -108,6 +141,9 @@ nav li:first-child {
 
 @media(max-width:400px) {
   .sidebar {
+    width: 100%
+  }
+  .sidebar2 {
     width: 100%
   }
 }
