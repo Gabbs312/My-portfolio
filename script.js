@@ -19,4 +19,4 @@ function hideSidebar2(){
   sidebar.style.display='none'
 
 }
-hideSidebar();
+hideSidebar2();
