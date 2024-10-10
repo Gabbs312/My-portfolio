@@ -10,13 +10,15 @@ function hideSidebar(){
 }
 hideSidebar();
 
+
 function showSidebar2(){
-  const sidebar = document.querySelector('.sidebar2')
-    sidebar.style.display='flex'
+  const sidebar2 = document.querySelector('.sidebar2')
+    sidebar2.style.display='flex'
   }
+
 function hideSidebar2(){
-  const sidebar = document.querySelector('.sidebar2')
-  sidebar.style.display='none'
+  const sidebar2 = document.querySelector('.sidebar2')
+  sidebar2.style.display='none'
 
 }
 hideSidebar2();
