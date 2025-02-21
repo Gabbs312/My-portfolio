@@ -16,24 +16,12 @@ body {
 
 
 nav {
-  position: relative;
+  position:sticky;
+  top: 0px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   background-color:#f5fbef;
   padding: 5px;
-  margin-left: 2%;
-  margin-right: 2%;
-  border-radius: 10px;
-  z-index: 2;
-}
-
-.nav2{
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  background-color:#f5fbef;
-  padding: 5px;
-  border-radius: 10px;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -49,22 +37,9 @@ nav ul  {
   justify-content: center;
 }
 
-.nav2 ul  {
-  list-style: none;
-  display: flex;
-  justify-content: top;
-}
-
-
 nav li {
   display: inline-block;
   height: 50px;
-}
-
-.nav2 li {
-  display: inline-block;
-  height: 50px;
-  padding: 0 30px;
 }
 
 nav a {
@@ -75,13 +50,7 @@ nav a {
   align-items: center;
   color: #748B75;
 }
-.nav2 a {
-  height: 100%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: #748B75;
-}
+
 nav a:hover {
   color: #5D6E5E;
   text-decoration: none;
@@ -92,7 +61,7 @@ nav li:first-child {
   margin-right: auto;
 }
 
-.sidebar , .sidebar2 {
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -108,11 +77,11 @@ nav li:first-child {
   justify-content: flex-start;
 }
 
-.sidebar li , .sidebar2 li {
+.sidebar li {
   width: 100%;
 }
 
-.sidebar a , .sidebar2 a{
+.sidebar a {
   color: #5D6E5E;
   width: 100%
 }
@@ -124,10 +93,6 @@ nav li:first-child {
 
 .menuButton {
   display: none;
-}
-
-.menuButton2{
-  list-style: none;
 }
 
 @media(max-width: 800px) {
